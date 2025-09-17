@@ -1,0 +1,15 @@
+[project]
+name = "esp8266"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=5.0",
+    "cryptography>=2.1.4,<35",
+    "future>=0.15.2",
+    "pyelftools>=0.22",
+    "pyparsing>=2.0.3,<2.4.0",
+    "pyserial>=3.0",
+    "setuptools>=80.9.0",
+]
