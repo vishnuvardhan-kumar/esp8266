@@ -13,7 +13,7 @@ Program to read temperature and humidity level from a DHT-22 sensor. The module 
 - Power: Connect sensor VCC and GND to ESP8266 3.3V and GND
 (Refer to sensor datasheet for full wiring/timing details)
 
-<img width="799" height="400" alt="image" src="https://github.com/user-attachments/assets/8f878cbb-d4f8-4432-b213-22de4204fe42" />
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/e8f566b4-b794-443e-a28b-0f35f3b857a7" />
 
 #### Timing
 
