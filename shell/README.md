@@ -39,7 +39,6 @@ Each time a new command line is obtained from `linenoise`, it is written into hi
 Here is an sample session with the console example. GPIO15 is connected to GND to remove boot log output.
 
 ```
-This is an example of ESP-IDF console component.
 Type 'help' to get the list of commands.
 Use UP/DOWN arrows to navigate through command history.
 Press TAB when typing command name to auto-complete.
@@ -95,7 +94,6 @@ I (642) heap_init: At 3FFE0440 len 00003BC0 (14 KiB): D/IRAM
 I (661) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
 I (681) heap_init: At 40093EA8 len 0000C158 (48 KiB): IRAM
 
-This is an example of ESP-IDF console component.
 Type 'help' to get the list of commands.
 Use UP/DOWN arrows to navigate through command history.
 Press TAB when typing command name to auto-complete.
