@@ -1,4 +1,4 @@
-# Console example
+## Shell
 
 This example illustrates a simple interactive shell running completely on the ESP8266.
 
