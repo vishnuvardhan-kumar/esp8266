@@ -2,7 +2,7 @@
 
 This example illustrates a simple interactive shell running completely on the ESP8266.
 
-## Configuring UART and VFS
+### Configuring UART and VFS
 
 ``initialize_console`` function configures some aspects of UART and VFS relevant to the operation of console:
 
@@ -14,27 +14,27 @@ This example illustrates a simple interactive shell running completely on the ES
 
 - UART driver is initialized, and VFS is configured to use UART driver's interrupt-driver read and write functions.
 
-## Line editing
+### Line editing
 
 The main source file of the example illustrates how to use `linenoise` library, including line completion, hints, and history.
 
-## Commands
+### Commands
 
 Several commands are registered using `esp_console_cmd_register` function. See `register_wifi` and `register_system` functions in `cmd_wifi.c` and `cmd_system.c` files.
 
-## Command handling
+### Command handling
 
 Main loop inside `app_main` function illustrates how to use `linenoise` and `esp_console_run` to implement read/eval loop.
 
-## Argument parsing
+### Argument parsing
 
 Several commands implemented in `cmd_wifi.c` and `cmd_system.c` use Argtable3 library to parse and check the arguments.
 
-## Command history
+### Command history
 
 Each time a new command line is obtained from `linenoise`, it is written into history and the history is saved into a file in flash memory. On reset, history is initialized from that file.
 
-# Example output
+### Example output
 
 Here is an sample session with the console example. GPIO15 is connected to GND to remove boot log output.
 
