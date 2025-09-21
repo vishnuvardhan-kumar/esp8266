@@ -81,6 +81,12 @@ wheels = [
 ]
 
 [[package]]
+name = "cppclean"
+version = "0.13"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e3/72/f19e794a81dcbfe637a4e8b10b5de12a5cd798ae63653b4fb05886db2bb7/cppclean-0.13.tar.gz", hash = "sha256:704e844f4340d4fd5bcaa9cd0095389d348f11548628f7054d8eb95463d72109", size = 31147, upload-time = "2019-07-30T12:19:46.452Z" }
+
+[[package]]
 name = "cryptography"
 version = "3.4.8"
 source = { registry = "https://pypi.org/simple" }
@@ -107,6 +113,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "click" },
+    { name = "cppclean" },
     { name = "cryptography" },
     { name = "future" },
     { name = "pyelftools" },
@@ -118,6 +125,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "click", specifier = ">=5.0" },
+    { name = "cppclean", specifier = ">=0.13" },
     { name = "cryptography", specifier = ">=2.1.4,<35" },
     { name = "future", specifier = ">=0.15.2" },
     { name = "pyelftools", specifier = ">=0.22" },
