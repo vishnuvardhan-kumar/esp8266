@@ -13,7 +13,12 @@ Got this from a hobby shop online and wanted to try writing some low-level code 
 2. Computer/laptop as the host machine (I'm using WSL on Windows)
 3. Micro-USB to USB-A/C cable to connect it to your computer
 
-#### Running the code
+#### Completed Modules
+1. [hello-world](https://github.com/vishnuvardhan-kumar/esp8266/tree/main/hello-world) - simple hello world on serial console and GPIO pin manipulation
+2. [dht-22](https://github.com/vishnuvardhan-kumar/esp8266/tree/main/dht-22) - control and read data from a DHT-22 Temperature and Humidity sensor
+3. [shell](https://github.com/vishnuvardhan-kumar/esp8266/tree/main/shell) - interactive shell with extensible command template, command history, completion and more
+
+#### Running the hello-world module code
 1. Install `python3`, `uv`, `binutils`, `curl`, `wget`, `gcc`, `git`, `linux-libc-dev`, `make` on your host machine using your package manager.
 2. Clone this repository
 ```
@@ -31,7 +36,7 @@ chmod +x setup.sh
 uv sync
 # (activate the virtualenv if not using direnv)
 ```
-6. Pick any of the example projects and navigate into them (will try to keep process consistent) and run `make menuconfig`
+6. Navigate into the directory and run `make menuconfig`
 ```
 cd hello-world/
 make menuconfig
@@ -54,7 +59,5 @@ make monitor       # open up a serial monitor for I/O
 make flash monitor
 ```
 
-11. Assuming this is the `hello-world` project, post the flashing - you should be able to see a message on the Serial Monitor and a blinking onboard LED.
+11. Post the flashing sequence - you should be able to see a message on the Serial Monitor and a blinking onboard LED.
 
-#### TODO
-- Push the rest of the code and libraries to this repository.
