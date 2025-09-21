@@ -4,7 +4,7 @@
 Cheap [microcontroller](https://en.wikipedia.org/wiki/ESP8266) board that you can find online for <Rs 300/- (~3.5 USD) and is fully programmable.
 
 ### Introduction
-Got this from a hobby shop online and wanted to try writing some low-level code for it. The whole Arduino IDE and process seemed super unintuitive (abstracts away all the learning). So I decided to try writing a toolchain and some modules for it manually.
+Got this from a hobby shop online and wanted to try writing some low-level code for it. The whole Arduino IDE and process seemed super unintuitive (abstracts away all the learning). So I decided to try writing a toolchain (using FreeRTOS) and some modules for it manually.
 
 Why this board makes more sense for learning (compared to let's say an ESP32): 
 - Single-core CPU means you need to control the event loop manually for async operations
@@ -66,5 +66,6 @@ make flash monitor
 ```
 
 11. Post the flashing sequence - you should be able to see a message on the Serial Monitor and a blinking onboard LED.
+
 
 
