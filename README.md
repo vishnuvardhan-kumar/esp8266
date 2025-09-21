@@ -1,10 +1,16 @@
 ## ESP8266
 
 ### What's an ESP8266
-Cheap [microcontroller](https://en.wikipedia.org/wiki/ESP8266) board that you can find online for <Rs 300/- (~3.5 USD), and are completely programmable.
+Cheap [microcontroller](https://en.wikipedia.org/wiki/ESP8266) board that you can find online for <Rs 300/- (~3.5 USD) and is fully programmable.
 
-### Intro
-Got this from a hobby shop online and wanted to try writing some low-level code for it. The whole Arduino IDE and process seemed super unintuitive (abstracts away all the learning). So I decided to try the manufacturer SDK and toolchain which was suprisingly complete.
+### Introduction
+Got this from a hobby shop online and wanted to try writing some low-level code for it. The whole Arduino IDE and process seemed super unintuitive (abstracts away all the learning). So I decided to try writing a toolchain and some modules for it manually.
+
+Why this board makes more sense for learning (compared to let's say an ESP32): 
+- Single-core CPU means you need to control the event loop manually for async operations
+- No onboard ROM (only flash storage) means you need to be careful with data management
+- No onboard crypto engine means you need to learn how the security features work and implement them yourself :)
+- Still getting full control over bootloader/flash storage for a fraction of the price
 
 ### Getting started
 
@@ -60,4 +66,5 @@ make flash monitor
 ```
 
 11. Post the flashing sequence - you should be able to see a message on the Serial Monitor and a blinking onboard LED.
+
 
