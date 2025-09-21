@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # Project specific
-sdkconfig
+**/sdkconfig*
 .python-version
 xtensa-lx106-elf/
 ESP8266_RTOS_SDK/
